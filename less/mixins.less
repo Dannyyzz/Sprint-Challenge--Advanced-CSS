@@ -7,13 +7,14 @@
     justify-content: center;
 }
 
-.default-btn {
-    background-color: @btn-bg-color;
+.default-btn(@background-color; @align; @radius) {
+    background-color: @background-color;
     border: none;
     color: white;
     padding: 7px 15px;
-    text-align: center;
+    text-align: @align;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    border-radius: @radius;
 }

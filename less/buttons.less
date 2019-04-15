@@ -2,6 +2,10 @@
 
 
 .btn {
-    .default-btn;
-    border-radius: 5px;
+    .default-btn(@btn-bg-color; center; 5px);
+
+    &:hover {
+        color: @gf-fav-color;
+        background-color: @miguels-fav-color;
+    }
 }
