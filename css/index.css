@@ -196,6 +196,7 @@ footer {
 }
 .home .intro img {
   border-radius: 5px;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -213,6 +214,21 @@ footer {
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .home .space-images img {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .sky {
+    display: none;
+  }
+}
+@media (max-width: 500px) {
+  .home .space-images .launch {
+    display: none;
+  }
 }
 .home .visit-planets {
   padding: 15px;
@@ -239,6 +255,11 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -247,6 +268,20 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .walk .walk-img {
+    margin: 1%;
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .home .walk {
+    width: 100%;
+    padding: 15px 0;
+    flex-direction: column-reverse;
+    margin: 1.5%;
+  }
 }
 .btn {
   background-color: #22283A;
@@ -262,4 +297,11 @@ footer {
 .btn:hover {
   color: #5E6164;
   background-color: #ff8c00;
+}
+@media (max-width: 500px) {
+  .btn {
+    width: 100%;
+    padding: 30px 0;
+    font-size: 2em;
+  }
 }
